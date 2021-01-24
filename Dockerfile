@@ -5,7 +5,7 @@ LABEL org.label-schema.name="docker-alexa-fhem" \
       authors="Veit Olschinski" \
       maintainer="volschin@googlemail.com"
 
-RUN npm install --only=production -g alexa-fhem@0.5.57
+RUN npm install --only=production -g alexa-fhem@0.5.58
 
 #VOLUME [ "/alexa-fhem" ]
 
