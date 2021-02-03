@@ -10,7 +10,7 @@ COPY healthcheck.js /healthcheck.js
 #VOLUME [ "/alexa-fhem" ]
 
 EXPOSE 3000
-HEALTHCHECK --interval=12s --timeout=12s --start-period=30s \  
+HEALTHCHECK --interval=120s --timeout=12s --start-period=30s \  
  CMD node /healthcheck.js
 
 #WORKDIR "/alexa-fhem"
