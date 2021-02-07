@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:lts-alpine3.12
 LABEL org.label-schema.name="docker-alexa-fhem" \
       org.label-schema.description="Alexa-FHEM Schnittstelle" \
       org.label-schema.url="https://github.com/volschin" \
