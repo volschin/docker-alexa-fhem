@@ -1,11 +1,11 @@
-FROM node:lts-alpine3.12
+FROM node:lts-alpine3.13
 LABEL org.label-schema.name="docker-alexa-fhem" \
       org.label-schema.description="Alexa-FHEM Schnittstelle" \
       org.label-schema.url="https://github.com/volschin" \
       authors="Veit Olschinski" \
       maintainer="volschin@googlemail.com"
 
-RUN npm install --only=production -g alexa-fhem@0.5.60
+RUN npm install --only=production -g alexa-fhem@0.5.61
 COPY healthcheck.js /healthcheck.js
 #VOLUME [ "/alexa-fhem" ]
 
